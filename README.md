@@ -37,6 +37,25 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `yarn transpile` 
+
+Will convert the ES6 to ES5 into a transpile folder including styles.
+
+### `yarn build:prod`
+
+Will start up the node server on port 8080 and through a get method will ship to the browser the builded and transpiled code to the browser.
+
+## Dockerfile
+
+The Docker strategy will host the node serve to send the microfrontend to the client.
+
+To test locally run:
+
+```
+docker build . -t header
+docker run -t -e PORT=8080 -p 8080:8080 header
+```
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
