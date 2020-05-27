@@ -11,10 +11,16 @@
     "start:prod": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "react-scripts": "3.4.1",
+    "@babel/cli": "^7.10.0",
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "@babel/preset-react": "^7.10.0",
+    "cross-env": "^7.0.2"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,12 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.10.0",
-    "@babel/core": "^7.10.0",
-    "@babel/preset-env": "^7.10.0",
-    "@babel/preset-react": "^7.10.0",
-    "cross-env": "^7.0.2"
   }
 }
