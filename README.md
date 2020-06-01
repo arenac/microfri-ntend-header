@@ -85,3 +85,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## References
+
+This project was created based on Rogério Chaves' [work](https://github.com/microfrontends/header/tree/part-i) which is based on the [Project Mosaic](https://www.mosaic9.org/). 
+What I have done so far was to upgrade Babel, some small improvements in the Dockerfile, add the docker-compose and environment variables set up
+I really apreciate all the good references above.
+
+I am aiming is to understand the microfrontend architecture and render the app on the server side seems to be a good approach to enhance the UX. But I want to see how silent could or not be a production deploy and how to handle states, routes, and apps communication.

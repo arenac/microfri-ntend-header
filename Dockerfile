@@ -1,6 +1,4 @@
-FROM node:lts-alpine3.11
-
-RUN apk update && apk upgrade
+FROM node:12.17.0-alpine3.11
 
 COPY package.json .
 RUN npm install
