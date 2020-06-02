@@ -3,7 +3,8 @@ const path = require('path');
 const fs = require('fs');
 const express = require('express');
 const React = require('react');
-const App = require('./transpiled/App.js').default;
+const App = require('./transpiled/App').default;
+// const styles = require('./transpiled/App/styles.css')
 const { renderToString } = require('react-dom/server');
 
 const server = express();
